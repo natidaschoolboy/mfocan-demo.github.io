@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all 0.45s ease;
+ 
+  }
+  body {
+    background-color: #2a2a2a;
+    color: #202020;
+  }
+  header {
+    padding: 10px;
+   
+
+  }
+  .logo {
+    font-size: 30px;
+    color: white;
+  }
+  .enter-form {
+    width: 350px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+
+  }
+  .sign {
+    padding: 50px;
+    position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../OIP.jpeg);
+  background: linear-gradient(white, #ff3c00ad);
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+  }
+  .backgrd{ 
+  position: relative;
+  width: 100%;
+  background-image: url(../R.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-start;
+
+  }
+  .sign-form{
+    background-color:black;
+    padding: 50px;
+    border-radius:20px ;
+    width: 500px;
+   
+  }
+  .btn {
+    width: 150px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .btn:hover{
+    transform: scale(0.9);
+    background-color: grey;
+  }
+  .end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: black;
+    width: 100%;
+    position: relative;
+  }
+  .last-text p {
+    color: white;
+    font-size: 14px;
+  }
+  .top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+    background: white;
+  }
+  .row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+  }
+  .row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .menu-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: 300px 300px 300px 300px;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    align-self: center;
+    padding: 50px;
+  }
+  .layer {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), black);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+    height: 100%
+  }
+  .layer h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .row:hover{
+    transform: scale(1.2);
+  }
+  .menu-button{
+    padding-left: 20px;
+    padding-right: 50px;
+    background-color: black;
+    width: 500px;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    font-size: 30px;
+  }
+  .menu-button:hover {
+    background-color: grey;
+  }
+  .menu-button1{
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 500px;
+    border-radius: 5px;
+    font-size: 30px;
+    border-style: solid; background-color: transparent; border-color: black; color: black;
+   
+  }
+  .menu-button1:hover{
+    color: white;
+    border-color: white;
+
+  }
+  .business-menu {
+    padding: 50px;
+  }
+.order-image{
+  border-color: #202020;
+  border-radius: 5px;
+  width: 500px;
+  height:400px;
+  border-style: solid;
+}
+.order-image:hover{
+  border-color: white;
+  
+}
+.notification-button{
+  font-style: bold;
+}
+.notification-button:hover{
+  color: red;
+}
+.circle-image {
+  width:450px; 
+  height: 400px; 
+  padding:0;
+  border-style: solid;
+  border-color:inherit;
+  margin-top: 10px;
+}
+
+
+  @media (max-width: 1480px) {
+    .enter-form {
+        width: 200px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        padding: 10px;
+    
+      }
+      .sign {
+        padding-top: 50px;
+        position: relative;
+      height: 100vh;
+      width: 100%;
+      background-image: url(../OIP.jpeg);
+      background: linear-gradient(white, #ff3c00ad);
+      background-size: cover;
+      align-items: center;
+      justify-content: flex-start;
+      }
+      .sign-form{
+        background-color:black;
+        padding: 20px;
+        border-radius:20px ;
+        width: auto;
+        
+      }
+      .circle-image {
+        width:400px; 
+        height: 350px; 
+        padding:0;
+        border-style: solid;
+        border-color:inherit;
+        margin-top: 10px;
+      }
+
+  }
+  
+  @media (max-width: 1000px) {
+    *{
+      width:100%;
+    }
+   
+    .enter-form {
+        width: 200px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        padding: 10px;
+    
+      }
+      .sign {
+        padding-top: 50px;
+        position: relative;
+      height: 100vh;
+      width: 100%;
+      background-image: url(../OIP.jpeg);
+      background: linear-gradient(white, #ff3c00ad);
+      background-size: cover;
+      align-items: center;
+      justify-content: flex-start;
+      }
+      .sign-form{
+        background-color:black;
+        padding: 50px;
+        border-radius:20px ;
+        
+      }
+      .menu-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        grid-template-columns: 150px 150px 150px 150px;
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+        align-self: center;
+        padding: 40px;
+      }
+      .menu-button{
+        padding-left: 2px;
+        padding-right: 15px;
+        background-color: black;
+        width: 200px;
+        color: white;
+        border-radius: 5px;
+        border:none;
+        font-size: 20px;
+      }
+      .backgrd{
+        padding:5px
+      }
+      .business-menu {
+        padding:5px;
+      }
+      .menu-button1{
+        padding-left: 2px;
+        padding-right: 15px;
+        width: 400px;
+        border-radius: 5px;
+        font-size: 20px;
+        border-style: solid; background-color: transparent; border-color: black; color: black;
+      }
+      .order-image{
+        border-color: #202020;
+        border-radius: 5px;
+        width: 250px;
+        height:200px;
+        border-style: solid;
+      }
+      .circle-image {
+        width:350px; 
+        height: 300px; 
+        padding:0;
+        border-style: solid;
+        border-color:inherit;
+        margin-top: 10px;
+      }
+
+  }
+
+  
+  @media (max-width: 500px) {
+    *{
+      width:100%;
+    }
+    .enter-form {
+        width: 150px;
+        background-color: red;
+        border: none;
+        border-radius: 10px;
+        height: 30px;
+        padding: 10px;
+    
+      }
+      .sign {
+        padding-top: 50px;
+        position: relative;
+      height: 100vh;
+      width: 100%;
+      background-image: url(../OIP.jpeg);
+      background: linear-gradient(white, #ff3c00ad);
+      background-size: cover;
+      align-items: center;
+      justify-content: flex-start;
+      }
+      .sign-form{
+        background-color:black;
+        padding: 50px;
+        border-radius:20px ;
+        
+      }
+      .menu-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        grid-template-columns: 150px 150px ;
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 1.5rem;
+        align-self: center;
+        padding: 5px;
+      }
+      .menu-button{
+        padding-left: 2px;
+        padding-right: 15px;
+        background-color: black;
+        width: 200px;
+        color: white;
+        border-radius: 5px;
+        border:none;
+        font-size: 20px;
+      }
+      .backgrd{
+        padding:5px
+      }
+      .business-menu {
+        padding:5px;
+      }
+      .menu-button1{
+        padding-left: 2px;
+        padding-right: 15px;
+        width: 200px;
+        border-radius: 5px;
+        font-size: 20px;
+        border-style: solid; background-color: transparent; border-color: black; color: black;
+      }
+      .order-image{
+        border-color: #202020;
+        border-radius: 5px;
+        width: 250px;
+        height:200px;
+        border-style: solid;
+      }
+      .circle-image {
+        width:170px; 
+        height: 120px; 
+        padding:0;
+        border-style: solid;
+        border-color:inherit;
+        margin-top: 2px;
+      }
+
+  }
