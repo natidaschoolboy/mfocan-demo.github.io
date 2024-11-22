@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mfocan</title>
+    <link rel="stylesheet" type="text/css" href="css/ThatStyle.css">
+    <link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body style="background: black">
+    <header style="width:100%" id="#">
+        <a onclick="showNewNotifications()" style="font-size: 25px;"><i class='bx bxs-bell'></i></a>
+        <center><a href=#><img style="color:white;"src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: white">Request Sent</p></strong>
+        </center>
+
+    </header>
+    <section class="business-menu" style="height: 80vh;color: white; ">
+        <center>
+            
+
+            <h1>Content from TXT File:</h1>
+  <pre id="txt-content"></pre>
+
+  <script>
+    // Fetching the text file
+    fetch('example.txt')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('txt-content').textContent = data;
+      })
+      .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+      });
+  </script>
+        </center>
+       
+    </section>
+       
+       
+
+    <section  class="end">
+        <div class="last-text">
+        <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+        </div>
+    
+        <div class="top">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </section>
+</body>
+</html>
