@@ -4,7 +4,10 @@ var cateringJob=0;
 var constructionJob=0;
 var beautyJob=0;
 var cleaningJob = 0;
-
+var signed = false;
+var user;
+var pass;
+var cpass;
 const Jobs = [];
 console.log(Jobs);
 
@@ -1168,10 +1171,10 @@ function showAvailableTransportJobs() {
                 if (job.job=='transport') {
                     content+=`<div style="font-size: 15px;" class="menu-button1">
                     <img src="img/pfp.jpg" class="circle-image"><br>
-                    <p>Tender From: User</p>
+                    <p>Tender From:  ${user}</p>
                     <p>Service: Transport</p>
                     <p>Location: ${job.location}<br>Date: ${job.date}</p><br>
-                     <a style="background-color: green; font-size: 25px" class="menu-button">Accept Job</a> | <a style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
+                     <a style="background-color: green; font-size: 25px" class="menu-button" onclick="removetrans()">Accept Job</a> | <a onclick="removetrans()" style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
                 </div><br>`;
                     
                 }
@@ -1207,6 +1210,19 @@ function showAvailableTransportJobs() {
     document.getElementById("bodycontent").innerHTML=content;
     
 }
+
+function removetrans() {
+    transportJob--;
+if (Jobs.length > 0) {
+    const index = Jobs.findIndex(job => job.job === 'transport');
+    if (index !== -1) {
+        Jobs.splice(index, 1); // Remove the element at the found index
+    }
+}
+
+showAvailableTransportJobs(); 
+}
+
 function showAvailableCleaningJobs() {
     var content='';
     content +=`
@@ -1229,10 +1245,10 @@ function showAvailableCleaningJobs() {
                 if (job.job=='cleaning') {
                     content+=`<div style="font-size: 20px;" class="menu-button1">
                     <img src="img/pfp.jpg" class="circle-image"><br>
-                    <p>Tender From: User</p>
+                    <p>Tender From:  ${user}</p>
                     <p>Service: Cleaning</p>
                     <p>Location: ${job.location}| Date: ${job.date}</p><br>
-                     <a style="background-color: green; font-size: 25px" class="menu-button">Accept Job</a> | <a style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
+                     <a style="background-color: green; font-size: 25px" class="menu-button" onclick="removeclean()">Accept Job</a> | <a onclick="removeclean()" style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
                 </div><br>`;
                     
                 }
@@ -1267,6 +1283,17 @@ function showAvailableCleaningJobs() {
 
     document.getElementById("bodycontent").innerHTML=content;
     
+}
+function removeclean() {
+    cleaningJob--;
+if (Jobs.length > 0) {
+    const index = Jobs.findIndex(job => job.job === 'cleaning');
+    if (index !== -1) {
+        Jobs.splice(index, 1); // Remove the element at the found index
+    }
+}
+
+showAvailableCleaningJobs(); 
 }
 
 function showAvailableBeautyJobs() {
@@ -1291,10 +1318,10 @@ function showAvailableBeautyJobs() {
                 if (job.job=='beauty') {
                     content+=`<div style="font-size: 20px;" class="menu-button1">
                     <img src="img/pfp.jpg" class="circle-image"><br>
-                    <p>Tender From: User</p>
+                    <p>Tender From:  ${user}</p>
                     <p>Service: Beauty</p>
                     <p>Location: ${job.location}| Date: ${job.date}</p><br>
-                     <a style="background-color: green; font-size: 25px" class="menu-button">Accept Job</a> | <a style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
+                     <a style="background-color: green; font-size: 25px" class="menu-button" onclick="removebeauty()">Accept Job</a> | <a onclick="removebeauty()" style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
                 </div><br>`;
                     
                 }
@@ -1330,6 +1357,18 @@ function showAvailableBeautyJobs() {
     document.getElementById("bodycontent").innerHTML=content;
     
 }
+function removebeauty() {
+    beautyJob--;
+if (Jobs.length > 0) {
+    const index = Jobs.findIndex(job => job.job === 'beauty');
+    if (index !== -1) {
+        Jobs.splice(index, 1); // Remove the element at the found index
+    }
+}
+
+showAvailableBeautyJobs(); 
+}
+
 function showAvailableCateringJobs() {
     var content='';
     content +=`
@@ -1352,10 +1391,10 @@ function showAvailableCateringJobs() {
                 if (job.job=='catering') {
                     content+=`<div style="font-size: 20px;" class="menu-button1">
                     <img src="img/pfp.jpg" class="circle-image"><br>
-                    <p>Tender From: User</p>
+                    <p>Tender From:  ${user}</p>
                     <p>Service: Catering</p>
                     <p>Location: ${job.location}| Date: ${job.date}</p><br>
-                     <a style="background-color: green; font-size: 25px" class="menu-button">Accept Job</a> | <a style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
+                     <a style="background-color: green; font-size: 25px" class="menu-button" onclick="removecatering()">Accept Job</a> | <a onclick="removecatering()" style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
                 </div><br>`;
                     
                 }
@@ -1391,6 +1430,18 @@ function showAvailableCateringJobs() {
     document.getElementById("bodycontent").innerHTML=content;
     
 }
+function removecatering() {
+    cateringJob--;
+if (Jobs.length > 0) {
+    const index = Jobs.findIndex(job => job.job === 'catering');
+    if (index !== -1) {
+        Jobs.splice(index, 1); // Remove the element at the found index
+    }
+}
+
+showAvailableCateringJobs(); 
+}
+
 function showAvailableConstructionJobs() {
     var content='';
     content +=`
@@ -1413,10 +1464,10 @@ function showAvailableConstructionJobs() {
                 if (job.job=='construction') {
                     content+=`<div style="font-size: 20px;" class="menu-button1">
                     <img src="img/pfp.jpg" class="circle-image"><br>
-                    <p>Tender From: User</p>
+                    <p>Tender From:  ${user}</p>
                     <p>Service: Construction</p>
                     <p>Location: ${job.location}| Date: ${job.date}</p><br>
-                     <a style="background-color: green; font-size: 25px" class="menu-button">Accept Job</a> | <a style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
+                     <a style="background-color: green; font-size: 25px" class="menu-button" onclick="removeconstruction()">Accept Job</a> | <a onclick="removeconstruction()" style="background-color: Red;font-size: 25px" class="menu-button">Deny Job</a><br/>
                 </div><br>`;
                     
                 }
@@ -1455,6 +1506,17 @@ function showAvailableConstructionJobs() {
     
 }
 
+function removeconstruction() {
+    constructionJob--;
+if (Jobs.length > 0) {
+    const index = Jobs.findIndex(job => job.job === 'construction');
+    if (index !== -1) {
+        Jobs.splice(index, 1); // Remove the element at the found index
+    }
+}
+
+showAvailableConstructionJobs(); 
+}
 
 // Check if the browser supports notifications
 if ('Notification' in window) {
@@ -1485,7 +1547,12 @@ if ('Notification' in window) {
 }
 
 function showSentScreen() {
-    var content='';
+
+    if (signed==false) {
+        showSignInPage();
+        
+    } else {
+        var content='';
     content +=`<section style="background: black">
     <header style="width:100%" id="#">
         <a onclick="showNewNotifications()" style="font-size: 25px;"><i class='bx bxs-bell'></i></a>
@@ -1518,10 +1585,85 @@ function showSentScreen() {
 </section>`;
             
     document.getElementById("bodycontent").innerHTML=content;
+    }
+
+}
+
+function showSignInPage() {
+    var content='';
+    content +=`<header style="width: 100%; color: black; background-color: white;" id="#">
+       <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+        <strong><p style="color: black">System Integrations</p></strong>
+       </center>
+   </header>
+   <div class="sign">
+    <center>
+        <form action="#" class="sign-form">
+        
+        <input type="text" class="enter-form" placeholder="Username" id="username"><br></br>
+        <input type="password" class="enter-form" placeholder="Password" id="password"><br></br>
+        <input type="password" class="enter-form" placeholder="Confirm Password" id="cpassword"><br></br>
+        
+        <button class="btn" onclick="signup()">Sign Up</button><br>
+        
+       
+       </form>
+    </center>
+   </div>
+
+
+   <section class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCANS 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+`;
+            
+    document.getElementById("bodycontent").innerHTML=content;
     
 
    
-    
+
     
 }
 
+function signup() {
+    
+        user = document.getElementById("username").value.trim();
+        pass = document.getElementById("password").value.trim();
+        cpass = document.getElementById("cpassword").value.trim();
+    
+        
+        if (user === "") {
+            alert("Username cannot be empty.");
+            return;
+        }
+    
+        if (pass === "" || cpass === "") {
+            alert("Password fields cannot be empty.");
+            return;
+        }
+    
+        if (pass !== cpass) {
+            alert("Passwords do not match.");
+            return;
+        }
+    
+      
+        alert(`Sign-up successful! Welcome, ${user}.`);
+        signed = true;
+        showSentScreen();
+        
+       
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("cpassword").value = "";
+   
+    
+    
+    
+}
