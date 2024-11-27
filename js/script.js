@@ -31,11 +31,12 @@ function businessSupply() {
                 <form action="#" method="get">
                     <button class="menu-button" onclick="showCatering()"><i class='bx bx-headphone' style='color:white;' ></i>Catering Services</button><br></br>
                     <button class="menu-button" onclick="showTransportation()"><i class='bx bxs-balloon' style='color:white;'  ></i>Transport Services</button><br></br>
-                    <button class="menu-button" ><i class='bx bxs-wine' style='color:white;' ></i>Construction Services</button><br></br>
+                    <button class="menu-button" onclick="showConstruction()"><i class='bx bxs-wine' style='color:white;' ></i>Construction Services</button><br></br>
                     <button class="menu-button" onclick="showhealth()"><i class='bx bx-landscape' style='color:white;' ></i>Health & Beauty Services</button><br></br>
-                    <button class="menu-button"><i class='bx bxs-plane-land' style='color:white;' ></i>Rental Services</button><br></br>
-                    <button class="menu-button"><i class='bx bx-money' style='color:white;' ></i>Retail Services</button><br></br>
-                    <button class="menu-button"><i class='bx bxs-plane-land' style='color:white;' ></i>Consulting Services</button><br></br>
+                    <button class="menu-button" onclick="showRental()"><i class='bx bxs-plane-land' style='color:white;' ></i>Rental Services</button><br></br>
+                    <button class="menu-button" onclick="showRetail()"><i class='bx bx-money' style='color:white;' ></i>Retail Services</button><br></br>
+                    <button class="menu-button" onclick="showConsulting()"><i class='bx bxs-plane-land' style='color:white;' ></i>Consulting Services</button><br></br>
+                     <button class="menu-button" onclick="showCleaning()"><i class='bx bxs-plane-land' style='color:white;' ></i>Cleaning Services</button><br></br>
                 </form>
             </center>
          
@@ -142,9 +143,9 @@ function businessAd() {
         <center>
             <form action="#" method="get">
                 <button class="menu-button" onclick="showMusic()"><i class='bx bx-headphone' style='color:white;' ></i>Music</button><br></br>
-                <button class="menu-button"><i class='bx bxs-balloon' style='color:white;'  ></i> Entertainment</button><br></br>
+                <button class="menu-button" onclick="showEntertainment()"><i class='bx bxs-balloon' style='color:white;'  ></i> Entertainment</button><br></br>
                 <button class="menu-button" onclick="showEvents()" ><i class='bx bxs-wine' style='color:white;' ></i>Events</button><br></br>
-                <button class="menu-button"><i class='bx bx-landscape' style='color:white;' ></i>ART</button><br></br>
+                <button class="menu-button" onclick="showArt()"><i class='bx bx-landscape' style='color:white;' ></i>ART</button><br></br>
                 <button class="menu-button" onclick="showTravel()"><i class='bx bxs-plane-land' style='color:white;' ></i>Travel & Tourism</button><br></br>
 
                  
@@ -355,6 +356,7 @@ function showCatering() {
     `;
     
 }
+
 function showfastFoods() {
 
     document.getElementById("bodycontent").innerHTML=`
@@ -1667,3 +1669,275 @@ function signup() {
     
     
 }
+function showConstruction() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section style="background: linear-gradient(white, #ff3c00ad);">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessSupply()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Construction</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Building Contractors</button><br></br>
+                <button class="menu-button">Electrical Contractors</button><br></br>
+                <button class="menu-button">Architectures</button><br></br>
+                <button class="menu-button">Carpenters</button><br></br>
+                <button class="menu-button">Painters</button><br></br>
+                <button class="menu-button">Steelworks</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+function showCleaning() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section style="background: linear-gradient(white, #ff3c00ad);">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessSupply()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Cleaning</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Garden Services</button><br></br>
+                <button class="menu-button">Car Wash Spots</button><br></br>
+                <button class="menu-button">Laundry Services</button><br></br>
+                <button class="menu-button">Zoey</button><br></br>
+                <button class="menu-button">Waste Removals</button><br></br>
+                <button class="menu-button">Pro-Hands</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
+function showRental() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section style="background: linear-gradient(white, #ff3c00ad);">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessSupply()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Rental</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Catering Equipment</button><br></br>
+                <button class="menu-button">Event Equipment 4Hire</button><br></br>
+                <button class="menu-button">SMP Sound Hire</button><br></br>
+                <button class="menu-button">Construction Equipment</button><br></br>
+                <button class="menu-button">Mobile Equipment 4Hire</button><br></br>
+                <button class="menu-button">Accommodation</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
+function showRetail() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section style="background: linear-gradient(white, #ff3c00ad);">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessSupply()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Retailers</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Supermarkets</button><br></br>
+                <button class="menu-button">Hardwares</button><br></br>
+                <button class="menu-button">Butcheries</button><br></br>
+                <button class="menu-button">Liquor Outlets</button><br></br>
+                <button class="menu-button">Fruit & Veg Markets</button><br></br>
+                <button class="menu-button">Clothing Brands</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
+function showConsulting() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section style="background: linear-gradient(white, #ff3c00ad);">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessSupply()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Consulting</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Internet Services</button><br></br>
+                <button class="menu-button">Driving Schools</button><br></br>
+                <button class="menu-button">Radio and Media</button><br></br>
+                <button class="menu-button">Security Services</button><br></br>
+                <button class="menu-button">Local Day-Cares</button><br></br>
+                <button class="menu-button">Burial Socials</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
+function showEntertainment() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section class="backgrd">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessAd()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Entertainment</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Media</button><br></br>
+                <button class="menu-button">Film</button><br></br>
+                <button class="menu-button">Drama</button><br></br>
+                <button class="menu-button">Reality Shows</button><br></br>
+                <button class="menu-button">Motivation & Poetry</button><br></br>
+                <button class="menu-button">Stand-Up Comedy</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
+function showArt() {
+
+    document.getElementById("bodycontent").innerHTML=`
+    <section class="backgrd">
+    <header style="width:100%" id="#">
+   <a class="menu-button" style="width:auto" onclick="businessAd()">Back</a>
+        <center><a href=#><img src="https://see.fontimg.com/api/renderfont4/p72nK/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bUZPQ0FO/dripinkpersonaluse-black.png" alt="Dripping fonts"></a>
+         <strong><p style="color: black">Local Artists</p></strong>
+        </center>
+         
+    </header>
+
+    <section class="business-menu" style="height: 80vh;">
+        <center>
+            <form action="#" method="get">
+                <button class="menu-button">Graphic Designers</button><br></br>
+                <button class="menu-button">Photographers</button><br></br>
+                <button class="menu-button">Artists(Sketches)</button><br></br>
+                <button class="menu-button">Artists(Painters)</button><br></br>
+                <button class="menu-button">Modelling Agents</button><br></br>
+                <button class="menu-button">Entertainment Artists</button><br></br>
+            </form>
+        </center>
+    </section>
+    
+     <section  class="end">
+    <div class="last-text">
+    <p>&COPY;Copyrighted by MFOCAN 2024. All Rights Reserved</p>
+    </div>
+
+    <div class="top">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</section>
+</section>
+    `;
+    
+}
+
